@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/buffering_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:text="@string/buffering"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="13dp" />
+
+                    <ProgressBar
+                        style="@android:style/Widget.ProgressBar.Large"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="#ccdd99"
+                    >
+
+                    <Button
+                        android:id="@+id/ddd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="200dp"
+                        android:text="ddddddddd" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@id/ddd"
+                        android:text="fffffffffff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Small Text"
+                        android:id="@+id/textView"
+                        android:layout_alignTop="@+id/ddd"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="67dp"/>
+                </RelativeLayout>
+
+                <com.wmx.android.wrstar.player.NEVideoView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="top" />
+
+                <RelativeLayout
+                    android:id="@+id/micro_controller"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/nemediacontroller_bg" >
+
+                    <Button
+                        android:id="@+id/micro_scale"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:text="full"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/play_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="0.0dip"
+                    android:layout_marginTop="0.0dip"
+                    android:background="@drawable/nemediacontroller_bg"
+                    android:visibility="invisible" >
+
+                    <ImageButton
+                        android:id="@+id/player_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="7dip"
+                        android:src="@drawable/ic_play_exit" />
+
+                    <TextView
+                        android:id="@+id/file_name"
+                        style="@style/MediaController_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:maxWidth="200dip"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/audio_remind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/audio_remind" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

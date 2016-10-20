@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_210"
+        android:background="@mipmap/bg_my_page">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:text="我的"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_5" />
+
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sl_setting" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_setting2"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_face_d" />
+
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dimen_85"
+            android:layout_height="@dimen/dimen_85"
+            android:layout_below="@id/tv_nickname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_23"
+            android:src="@mipmap/ic_avatar_default" />
+
+
+        <ImageView
+            android:id="@+id/iv_join_vip"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_130"
+            android:src="@mipmap/ic_join_vip"
+
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_200"
+            android:layout_marginTop="@dimen/dimen_110"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_bigv"
+            android:visibility="invisible" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_below="@id/iv_avatar"
+            android:layout_marginTop="@dimen/dimen_40"
+
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="@dimen/dimen_1"
+                android:layout_height="@dimen/dimen_15"
+                android:layout_centerInParent="true"
+                android:background="@color/text_white_60" />
+
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_9"
+                android:layout_toLeftOf="@id/divider"
+                android:drawableLeft="@mipmap/ic_following"
+                android:drawablePadding="@dimen/dimen_4"
+                android:text="关注 : 0"
+                android:textColor="@color/text_white_50"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/tv_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_9"
+                android:layout_toRightOf="@id/divider"
+                android:drawableLeft="@mipmap/ic_follower"
+                android:drawablePadding="@dimen/dimen_4"
+                android:text="粉丝 : 0"
+                android:textColor="@color/text_white_50"
+                android:textSize="@dimen/text_size_2" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:background="@color/bg_white"
+        android:paddingBottom="@dimen/dimen_9"
+        android:paddingTop="@dimen/dimen_9">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sl_white_gray">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_my_page_video" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/VideoPageResponse" />
+
+        </RelativeLayout>
+
+        <View style="@style/VerticalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_buying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sl_white_gray">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_my_page_wallet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/buying" />
+
+        </RelativeLayout>
+
+        <View style="@style/VerticalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_star"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sl_white_gray">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_my_page_star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/stars" />
+
+        </RelativeLayout>
+
+        <View style="@style/VerticalDivider" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_recommendation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sl_white_gray">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_my_page_recommendation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/recommendation" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_browsing_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_53"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:background="@drawable/sl_white_gray"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_browsing_history"
+            android:drawablePadding="@dimen/dimen_14"
+            android:text="@string/browsing_history"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_53"
+        android:background="@drawable/sl_white_gray"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_feedback"
+            android:drawablePadding="@dimen/dimen_14"
+            android:text="@string/feedback"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_about_wrstar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_53"
+        android:background="@drawable/sl_white_gray"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_about_wrstar"
+            android:drawablePadding="@dimen/dimen_14"
+            android:text="@string/about_wrstar"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_cutomer_service"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_53"
+        android:background="@drawable/sl_white_gray"
+        android:paddingLeft="@dimen/dimen_12"
+        android:paddingRight="@dimen/dimen_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_customer_service"
+            android:drawablePadding="@dimen/dimen_14"
+            android:text="@string/customer_service"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_arrow"
+            android:autoLink="phone"
+            android:text="@string/customer_service_num"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_5" />
+
+    </RelativeLayout>
+
+</LinearLayout>

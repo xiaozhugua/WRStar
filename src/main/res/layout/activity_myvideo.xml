@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@mipmap/ic_back_arrow"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+        app:title="@string/register" />
+
+
+    <RelativeLayout
+        android:id="@+id/ly_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_below="@+id/action_bar"
+        android:background="@color/bg_gray"
+
+        >
+
+
+        <RadioGroup
+            android:id="@+id/channel_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_42"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_75"
+            android:layout_marginRight="@dimen/dimen_75"
+            android:layout_marginTop="@dimen/dimen_10"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/channel_rg_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_tp_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="直播"
+                android:textColor="@drawable/tab_tp_textcolor"
+                android:textSize="@dimen/text_size_6" />
+
+
+            <RadioButton
+                android:id="@+id/channel_rg_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_tp_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="录播"
+                android:textColor="@drawable/tab_tp_textcolor"
+                android:textSize="@dimen/text_size_6" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_ondemand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_change"
+        android:visibility="gone">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_ondemand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_live"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_change">
+
+        <LinearLayout
+            android:id="@+id/live_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_80"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ly_sub1"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_num_sub1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_size_6" />
+
+                <TextView
+                    android:id="@+id/tv_name_sub1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+
+                    android:gravity="center"
+                    android:text="已开始"
+                    android:textColor="@color/bg_gray_deep"
+                    android:textSize="@dimen/text_size_6" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_weight="0.005"
+                android:background="@color/divider_gray" />
+
+            <LinearLayout
+                android:id="@+id/ly_sub0"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_num_sub0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_6" />
+
+                <TextView
+                    android:id="@+id/tv_name_sub0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+
+                    android:gravity="center"
+                    android:text="即将开始"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_weight="0.005"
+                android:background="@color/divider_gray" />
+
+            <LinearLayout
+                android:id="@+id/ly_sub2"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_num_sub2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_6" />
+
+                <TextView
+                    android:id="@+id/tv_name_sub2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+
+                    android:gravity="center"
+                    android:text="已结束"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_6" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/live_type">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

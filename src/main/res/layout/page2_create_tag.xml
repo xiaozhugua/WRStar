@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_liveinteraction"
+     >
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/bg_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:hint="#请输入你的标签，不超过16个字"
+            android:id="@+id/et_input_tag"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/bg_btn_white"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dimen_15"
+            />
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btn_check"
+            android:text="确定"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_selector"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_25"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <com.wmx.android.wrstar.views.widgets.TagFlowLayout
+        android:background="@drawable/bg_edittext_grey"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:foregroundGravity=""
+        android:id="@+id/id_flowlayout"
+        zhy:max_select="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.wmx.android.wrstar.views.widgets.TagFlowLayout>
+
+    <GridView
+        android:visibility="gone"
+        android:background="@drawable/bg_edittext_grey"
+        android:padding="5dp"
+        android:id="@+id/grid_addtag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:cacheColorHint="@color/transparent"
+        android:clipToPadding="true"
+        android:horizontalSpacing="@dimen/dimen_3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dimen_3"
+        >
+    </GridView>
+</LinearLayout>

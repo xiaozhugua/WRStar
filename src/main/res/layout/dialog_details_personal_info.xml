@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_210"
+            android:background="@mipmap/bg_my_page">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/dimen_45"
+                android:layout_height="@dimen/dimen_45"
+                android:background="@mipmap/ic_back_arrow" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:text="详细信息"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_6" />
+
+
+            <com.wmx.android.wrstar.views.widgets.CirImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="@dimen/dimen_74"
+                android:layout_below="@id/tv_nickname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_23"
+                android:src="@mipmap/ic_avatar_default" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_22"
+                android:text="糯米林"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="@dimen/dimen_10">
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_15"
+                    android:layout_centerInParent="true"
+                    android:background="@color/text_white_60" />
+
+                <TextView
+                    android:id="@+id/tv_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_9"
+                    android:layout_toLeftOf="@id/divider"
+                    android:drawableLeft="@mipmap/ic_following"
+                    android:drawablePadding="@dimen/dimen_4"
+                    android:text="关注 : 0"
+                    android:textColor="@color/text_white_50"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:id="@+id/tv_follower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_9"
+                    android:layout_toRightOf="@id/divider"
+                    android:drawableLeft="@mipmap/ic_follower"
+                    android:drawablePadding="@dimen/dimen_4"
+                    android:text="粉丝 : 0"
+                    android:textColor="@color/text_white_50"
+                    android:textSize="@dimen/text_size_2" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/ly_mobnum"
+                    style="@style/RegisterItem">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        android:text="手机号 :"
+
+                        />
+
+                    <TextView
+
+                        android:id="@+id/tv_mobnum"
+                        style="@style/PersonalTextView"
+                        android:text="194****5604" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/dimen_2"
+                        android:src="@mipmap/ic_right_arrow" />
+
+
+                    <View
+                        style="@style/HorizontalDivider"
+                        android:layout_alignParentBottom="true"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly_sex"
+                    style="@style/RegisterItem">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        android:text="性别"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        style="@style/PersonalTextView"
+                        android:text="女" />
+
+
+                    <View
+                        style="@style/HorizontalDivider"
+                        android:layout_alignParentBottom="true"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly_location"
+                    style="@style/RegisterItem">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+
+                        android:text="地区"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/PersonalTextView"
+                        android:text="未更新" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/dimen_2"
+                        android:src="@mipmap/ic_right_arrow" />
+
+                    <View
+                        style="@style/HorizontalDivider"
+                        android:layout_alignParentBottom="true"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly_signature"
+                    style="@style/RegisterItem">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="个性签名" />
+
+                    <TextView
+                        android:id="@+id/tv_signature"
+                        style="@style/PersonalTextView"
+                        android:text="不忘初心 ^-^" />
+
+
+                </RelativeLayout>
+
+                <View style="@style/Divier20"></View>
+
+                <RelativeLayout
+                    android:id="@+id/ly_nickname"
+                    android:visibility="invisible"
+                    style="@style/RegisterItem">
+
+
+                    TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:text="昵称"
+
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="观看记录"
+                        android:textColor="@color/text_gray_deep"
+                        android:textSize="@dimen/text_size_5"
+
+                        />
+
+
+                    <View
+                        style="@style/HorizontalDivider"
+                        android:layout_alignParentBottom="true"></View>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_focus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_action_bar">
+
+
+        <TextView
+            android:id="@+id/tv_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="加关注"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_yellow"
+            android:drawableLeft="@mipmap/ic_focus_people1"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

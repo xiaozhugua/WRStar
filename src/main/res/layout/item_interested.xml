@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_wmx_zuixin"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_touxiang"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_wmx_zuixin_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textColor="@color/text_gray_deep"
+        android:text="如何修炼萌妹子"
+        android:layout_marginTop="@dimen/dimen_5"
+        />
+
+
+
+</LinearLayout>

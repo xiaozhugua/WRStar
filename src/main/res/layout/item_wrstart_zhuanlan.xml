@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="185dp"
+    android:layout_height="170dp">
+
+    <ImageView
+        android:id="@+id/iv_wmx_zhanglan"
+        android:layout_width="185dp"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/livepic"
+        />
+    <TextView
+        android:id="@+id/tv_zhuanlan_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/linner_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_15"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:text="通往财富自由之路"
+        />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_btn_rect_yellow_line_yellow"
+        android:id="@+id/linner_collect"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="55dp"
+        android:gravity="center_vertical"
+        android:layout_height="20dp">
+        <ImageView
+            android:id="@+id/img_zhuanlan_collect"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/img_collect"
+            />
+        <TextView
+            android:id="@+id/tv_zhuanlan_collect"
+            android:layout_width="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_height="12dp"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="收藏"
+            android:textSize="@dimen/dimen_10"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray2"  >
+
+    <RelativeLayout
+        android:id="@+id/bottomee"
+        android:layout_below="@+id/et_speak_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_50"
+        android:padding="10dp"
+         >
+
+
+        <Button
+            android:background="@drawable/bg_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_height="fill_parent"
+            android:id="@+id/btn_speak"
+            android:text="发表" />
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/et_speak_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:lines="5"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|top"
+        android:hint="说点什么..."
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:textColor="@color/text_gray_deep"
+        android:background="@drawable/bg_edittext"
+        android:textSize="16sp" >
+
+        <requestFocus />
+    </EditText>
+
+
+
+</RelativeLayout>

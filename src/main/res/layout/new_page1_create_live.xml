@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_liveinteraction"
+     >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:gravity="center"
+        android:id="@+id/ll_createtitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:textColor="@color/white"
+            style="?android:attr/textViewStyle"
+            android:id="@+id/ed_createtitle"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:hint="请输入直播标题"
+            android:textSize="@dimen/dimen_17"
+            android:textColorHint="@color/sl_white_text"
+            android:background="@null"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:background="@drawable/bg_btn_gray"
+            android:id="@+id/tv_go"
+            android:textSize="@dimen/dimen_20"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="确定"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/llyrr"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/llye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/tv_live_title"
+        android:layout_width="200dp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        android:hint="给直播来个标题吧"
+        android:textSize="@dimen/dimen_20"
+        android:gravity="center"
+        android:textColor="@color/bg_yellow"
+        android:textColorHint="@color/white"
+        />
+
+        <TextView
+            android:visibility="gone"
+            android:singleLine="true"
+            android:id="@+id/tv_live_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_live_title"
+            android:text=""
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/bg_yellow"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llye"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/img_live_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_shuangxianggufen"
+            />
+
+        <TextView
+            android:id="@+id/tv_genggai_pic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:text="更改封面"
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_add_tag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_below="@+id/llyrr"
+        android:text="添加标签"
+        android:textSize="@dimen/dimen_12"
+        android:textColor="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/re_tr"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_add_tag"
+        >
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/text_white_50" />
+
+        <LinearLayout
+            android:id="@+id/line_shenghuoxiu"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:background="@mipmap/shenghuoxiu"
+                android:id="@+id/tv_life_showimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tv_life_showimg"
+                android:id="@+id/tv_life_show"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="生活秀"
+                android:textSize="@dimen/dimen_12"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_taobaoxiu"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:background="@mipmap/live_taobaoxiu_select"
+                android:id="@+id/tv_taobao_showimg"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_taobao_show"
+                />
+
+            <TextView
+
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:id="@+id/tv_taobao_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:text="淘宝秀"
+                android:textSize="@dimen/dimen_12"
+                android:textColor="@color/text_yellow"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/re_tr"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:layout_width="270dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="40dp">
+
+        <Button
+            android:background="@drawable/bg_btn_yellow_bianyuan"
+            android:id="@+id/ll_start_live"
+            android:text="开始直播"
+            android:textColor="@color/text_yellow"
+            android:textSize="@dimen/dimen_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

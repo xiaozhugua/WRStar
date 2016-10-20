@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+              android:orientation="vertical">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@mipmap/ic_back_arrow"
+        app:showLeftImage="true"
+        app:title="@string/verify_account"/>
+
+    <RelativeLayout
+        style="@style/RegisterItem"
+        android:layout_marginTop="@dimen/dimen_12">
+
+        <TextView
+            android:id="@+id/tv_get_auth_code"
+            android:layout_width="@dimen/dimen_107"
+            android:layout_height="@dimen/dimen_27"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/get_auth_code"
+            android:textSize="@dimen/text_size_2"
+            android:textColor="@color/sl_get_auth_code"
+            android:background="@drawable/sl_get_auth_code"/>
+
+        <EditText
+            android:id="@+id/et_auth_code"
+            style="@style/EditTextSingleLine"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_120"
+            android:hint="@string/please_input_the_auth_code_you_received"
+            android:inputType="number"
+            android:maxLength="@integer/max_length_auth_code"
+            android:drawableLeft="@mipmap/ic_auth_code"
+            android:drawablePadding="@dimen/common_margin_left_or_right"
+            />
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/RegisterItem"
+        android:id="@+id/rlyt_password"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditTextPassword"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:hint="@string/please_register_your_password"
+            android:drawableLeft="@mipmap/ic_password_register"
+            android:drawablePadding="@dimen/common_margin_left_or_right"/>
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BtnYellow"
+        android:layout_marginLeft="@dimen/dimen_43"
+        android:layout_marginRight="@dimen/dimen_43"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="@string/next"/>
+</LinearLayout>

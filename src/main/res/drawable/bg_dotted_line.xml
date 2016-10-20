@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"   >
+
+
+
+    <!-- 描边 -->
+    <stroke
+        android:width="2dp"
+        android:dashWidth="5dp"
+        android:dashGap="3dp"
+        android:color="@color/white"
+        />
+    <!-- 圆角 -->
+    <corners
+        android:radius="20dp" />
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" />
+</shape>  

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_8"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_140"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/inter3" />
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv1"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_below="@id/iv_video"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:gravity="left|center"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:text="如何修炼成萌妹子"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_4" />
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

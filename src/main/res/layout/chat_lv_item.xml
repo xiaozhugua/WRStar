@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="09-25 12:00"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_time">
+
+        <RelativeLayout
+            android:id="@+id/chart_from_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.wmx.android.wrstar.views.widgets.CirImageView
+                android:id="@+id/chatfrom_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_avatar_default" />
+
+            <TextView
+                android:id="@+id/chatfrom_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/chatfrom_icon"
+                android:layout_marginLeft="@dimen/dimen_3"
+                android:lines="1"
+                android:text="name"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/chatfrom_content"
+                android:layout_toRightOf="@id/chatfrom_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_80"
+                android:background="@drawable/chat_left"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_8"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_10"
+                android:text="的发第三方"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart_to_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent">
+
+            <com.wmx.android.wrstar.views.widgets.CirImageView
+                android:id="@+id/chatto_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_avatar_default" />
+
+
+            <TextView
+                android:id="@+id/chatto_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/chatto_icon"
+                android:layout_marginRight="@dimen/dimen_3"
+                android:lines="1"
+                android:text="name"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/chatto_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/chatto_icon"
+                android:background="@drawable/chat_right"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_80"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_15"
+                android:text="大大的速度"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

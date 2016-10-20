@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_250"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_250"
+        android:background="@color/bg_white"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_8"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/inter3" />
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv1"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_below="@id/iv_video"
+            android:lines="2"
+            android:gravity="left|center"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:text="如何修炼成萌妹子"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_4" />
+
+
+
+        <ImageView
+            android:id="@+id/ic_good"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+
+            android:layout_marginLeft="@dimen/dimen_10"
+
+            android:layout_below="@+id/title"
+            android:src="@drawable/img_shoucang1" />
+
+
+        <TextView
+            android:id="@+id/tv_collect_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ic_good"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_toRightOf="@id/ic_good"
+            android:text="22346" />
+
+        <ImageView
+            android:id="@+id/ic_start"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_alignBottom="@id/ic_good"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_toRightOf="@id/tv_collect_num"
+            android:src="@drawable/img_bofang" />
+
+        <TextView
+            android:id="@+id/tv_play_num"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ic_start"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_toRightOf="@id/ic_start"
+            android:text="35456" />
+
+        <View style="@style/Divier1"
+            android:layout_below="@id/ic_good"
+            android:layout_marginTop="@dimen/dimen_10"
+            />
+
+
+
+
+
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:id="@+id/iv_author"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_alignLeft="@id/ic_good"
+            android:layout_below="@id/ic_start"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:src="@color/bg_gray"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_author"
+            android:layout_marginBottom="@dimen/dimen_2"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_toRightOf="@id/iv_author"
+            android:text="糯米林"
+            android:textSize="@dimen/text_size_2"
+            android:textColor="@color/text_gray_deep" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_author"
+            android:layout_marginBottom="@dimen/dimen_2"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_2"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:text="12分钟前" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

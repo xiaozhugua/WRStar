@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.wmx.android.wrstar.views.widgets.RollPager.RollPagerView
+        android:id="@+id/roll_pagerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300" />
+
+
+    <com.wmx.android.wrstar.views.widgets.PagerSlidingTabStrip
+        android:id="@+id/slide_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true" />
+
+
+    <View
+        style="@style/Divier1"
+        android:layout_marginTop="@dimen/dimen_4" />
+
+    <com.wmx.android.wrstar.views.widgets.MultiLineRadioGroup
+        android:id="@+id/rg_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left_or_right"
+
+        app:child_layout="@layout/item_raido_yellow"
+        app:child_margin_horizontal="1.0dip"
+        app:child_margin_vertical="6.0dip"
+        app:child_values="@array/childvalues"
+        app:gravity="1"
+        app:single_choice="true" />
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="140dp"
+
+    android:layout_height="78dp">
+
+
+    <LinearLayout
+        android:layout_width="145dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/sl_btn_gray"
+        >
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textScaleX="1.1"
+            android:textColor="@color/text_gray"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="田园牧歌的"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:paddingLeft="@dimen/dimen_6"
+            android:paddingRight="@dimen/dimen_6"
+            android:lines="2"
+            android:textScaleX="1.1"
+            android:textColor="@color/text_black"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

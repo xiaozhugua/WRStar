@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/about_us"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:src="@mipmap/ic_logo"
+        />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前版本 V1.0"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/ly_about"
+        android:background="@drawable/sl_white_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52"
+        android:layout_marginTop="@dimen/dimen_50"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_margin_left_or_right"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_4" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_right_arrow"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            />
+
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/ly_agreement"
+        android:background="@drawable/sl_white_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_margin_left_or_right"
+            android:gravity="center_vertical"
+            android:text="用户协议"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_4" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_right_arrow"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

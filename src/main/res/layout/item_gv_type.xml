@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@mipmap/ic_finance" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_icon"
+        android:layout_marginTop="@dimen/dimen_5"
+
+        android:layout_centerHorizontal="true"
+        android:text="新品"
+
+        android:textSize="@dimen/text_size_4" />
+
+
+</RelativeLayout>

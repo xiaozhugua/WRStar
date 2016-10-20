@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@mipmap/ic_back_arrow"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"  />
+
+    <com.wmx.android.wrstar.views.widgets.MultiLineRadioGroup
+        android:id="@+id/rg_classify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left_or_right"
+
+        app:child_layout="@layout/item_raido_yellow"
+        app:child_margin_horizontal="1.0dip"
+        app:child_margin_vertical="6.0dip"
+        app:child_values="@array/childvalues"
+        app:gravity="1"
+        app:single_choice="true" />
+
+
+    <com.wmx.android.wrstar.views.widgets.MultiLineRadioGroup
+        android:id="@+id/rg_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left_or_right"
+
+        app:child_layout="@layout/item_raido_yellow"
+        app:child_margin_horizontal="1.0dip"
+        app:child_margin_vertical="6.0dip"
+        app:child_values="@array/childvalues"
+        app:gravity="1"
+        app:single_choice="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_gray2"
+
+        />
+
+    <GridView
+        android:id="@+id/gv_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="true"
+        android:horizontalSpacing="@dimen/dimen_10"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dimen_10">
+
+    </GridView>
+
+
+</LinearLayout>

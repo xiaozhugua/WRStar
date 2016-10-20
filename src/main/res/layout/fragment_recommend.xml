@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+
+        android:id="@+id/imgimg"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/bg_image_selector"
+            android:id="@+id/iv_recommend_share"
+            android:src="@mipmap/my_commend_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/net_error"
+        layout="@layout/item_net_error" />
+
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_below="@+id/imgimg"
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_progress="@layout/view_progress" />
+
+
+</RelativeLayout>

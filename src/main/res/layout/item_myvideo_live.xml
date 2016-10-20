@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_toRightOf="@id/iv_video"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:src="@mipmap/iv_live" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:lines="2"
+
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="成功创业的九个因素"
+            android:textColor="@color/sl_btn_text"
+            android:textSize="@dimen/text_size_5" />
+
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_height="@dimen/dimen_120"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/dimen_15"
+              />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_45"
+
+            android:layout_marginTop="@dimen/dimen_15"
+            android:src="@mipmap/img_bofang_tp" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_alignLeft="@id/iv_icon"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/bg_btn_orange"
+            android:paddingBottom="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_8"
+            android:text="直播中 : 00：39：20"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_5"
+            />
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_icon"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="温馨提示:点击进入直播间"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

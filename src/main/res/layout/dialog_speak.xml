@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"  >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@drawable/img_jianbian" >
+
+        <TextView
+            android:id="@+id/img_speak_fanhui"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+           android:text="返回" />
+
+        <TextView
+            android:id="@+id/txt_speak_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加评论"
+            android:textColor="@color/white"
+             />
+
+        <Button
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_height="fill_parent"
+            android:id="@+id/btn_speak"
+            android:text="发送" />
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:layout_below="@id/top"
+        android:id="@+id/et_speak_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left|top"
+        android:hint="请输入评论(最多200字)"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:textColor="@color/text_gray_deep"
+        android:background="@null"
+        android:textSize="16sp" >
+
+        <requestFocus />
+    </EditText>
+
+
+
+</RelativeLayout>

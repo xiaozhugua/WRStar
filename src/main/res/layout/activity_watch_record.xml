@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@mipmap/ic_back_arrow"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+        app:title="@string/watch_record" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_watch_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/live_type">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

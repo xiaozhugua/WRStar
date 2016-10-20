@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+        app:title="@string/about_us" />
+
+    <RelativeLayout
+        android:id="@+id/ly_agreement"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/common_margin_left_or_right"
+                    android:layout_marginRight="@dimen/common_margin_left_or_right"
+                    android:layout_marginTop="@dimen/common_margin_top_or_bottom"
+                    android:text="用户协议 :"
+                    android:textColor="@color/text_black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv1"
+                    android:layout_marginLeft="@dimen/common_margin_left_or_right"
+                    android:layout_marginRight="@dimen/common_margin_left_or_right"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:lineSpacingExtra="@dimen/dimen_3"
+                    android:text="@string/user_agreement"
+                    android:textColor="@color/text_gray_deep"
+                    android:textScaleX="1.1" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_150"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_margin_top_or_bottom"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_logo"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:lineSpacingExtra="@dimen/dimen_5"
+
+            android:text="@string/about_wrstar_info"
+            android:textColor="@color/text_gray_deep"
+            android:textScaleX="1.1" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

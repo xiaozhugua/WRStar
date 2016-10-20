@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    >
+
+        <RelativeLayout
+            android:id="@+id/chart_from_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_icon_corser2"
+            >
+
+
+            <TextView
+                android:id="@+id/chatfrom_name"
+                android:background="@android:color/transparent"
+                android:textColor="@color/text_yellow"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_3"
+                android:singleLine="true"
+                android:text="name"
+                android:textSize="@dimen/text_size_3" />
+
+            <com.wmx.android.wrstar.testemoji.emoji.EmojiTextView
+                android:background="@android:color/transparent"
+                android:id="@+id/chatfrom_content"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/chatfrom_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_3"
+                android:text="的发第三方"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_4" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/chart_to_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_icon_corser2"
+            >
+
+
+            <TextView
+                android:id="@+id/chatto_name"
+                android:background="@android:color/transparent"
+                android:textColor="@color/text_yellow"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_3"
+                android:singleLine="true"
+                android:text="name"
+                android:textSize="@dimen/text_size_3" />
+
+            <com.wmx.android.wrstar.testemoji.emoji.EmojiTextView
+                android:background="@android:color/transparent"
+                android:id="@+id/chatto_content"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/chatto_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_3"
+                android:text="的发第三方"
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/text_size_4" />
+        </RelativeLayout>
+
+
+
+</LinearLayout>

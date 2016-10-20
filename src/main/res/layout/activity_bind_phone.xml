@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@mipmap/ic_back_arrow"
+        app:showLeftImage="true"
+        app:title="@string/social_login"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bind_phone_number_hint_1"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/bind_phone_number_hint_2"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_2"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/RegisterItem"
+        >
+
+        <EditText
+            android:id="@+id/et_account"
+            style="@style/EditTextAccount"
+            android:drawableLeft="@mipmap/ic_account_register"
+            android:drawablePadding="@dimen/common_margin_left_or_right"
+            android:hint="@string/please_register_account"
+            />
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BtnYellow"
+        android:layout_marginLeft="@dimen/dimen_43"
+        android:layout_marginRight="@dimen/dimen_43"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="@string/next"/>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_27"
+        android:background="@drawable/bg_black"
+        android:gravity="center"
+       tools:text="@string/account_already_bind_social_account"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_2"
+        android:visibility="gone"/>
+</LinearLayout>

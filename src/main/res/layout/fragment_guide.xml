@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_guide_2"
+        android:scaleType="fitXY"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_fly"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_120"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dimen_20"
+        style="@null"
+        android:background="@mipmap/ic_guide"/>
+
+
+</FrameLayout>

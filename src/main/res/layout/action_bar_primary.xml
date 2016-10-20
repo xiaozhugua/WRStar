@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlyt_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@drawable/bg_action_bar">
+
+    <ImageView
+        android:id="@+id/ibtn_left"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/sl_action_bar_btn"
+        android:visibility="gone"
+        tools:src="@mipmap/ic_back_arrow"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxLength="@integer/max_length_action_bar_title"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_5"
+        tools:text="一二三四五六七八九十个一二三四五六七八九十个"/>
+
+    <TextView
+        android:id="@+id/tv_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/common_margin_left_or_right"
+        android:background="@drawable/sl_action_bar_btn"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_3"
+        android:visibility="gone"
+        tools:text="下一步"/>
+
+    <ImageView
+        android:id="@+id/ibtn_right"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sl_action_bar_btn"
+        android:visibility="gone"
+        tools:src="@mipmap/ic_back_arrow"/>
+
+</RelativeLayout>

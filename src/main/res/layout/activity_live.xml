@@ -1,0 +1,312 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/bg_gray">
+
+<View
+    android:id="@+id/ly_black"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_200"
+    android:background="@color/black"
+    />
+
+    <RelativeLayout
+        android:id="@+id/ly_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+
+        <com.wmx.android.wrstar.player.NEVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/otherview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_70"
+            android:layout_marginTop="@dimen/dimen_200">
+
+
+            <RadioGroup
+                android:id="@+id/rg_live"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rg_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rg_live_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="互动"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rg_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rg_live_center"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="课件"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rg_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rg_live_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="粉丝"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/type"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="@dimen/dimen_13"
+                android:layout_height="@dimen/dimen_13"
+                android:layout_marginLeft="@dimen/common_margin_left_or_right"
+                android:layout_marginTop="@dimen/dimen_1"
+                android:src="@mipmap/ic_red_start" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_toRightOf="@id/iv2"
+                android:text="当前0人观看" />
+
+
+            <com.wmx.android.wrstar.chat.view.DropdownListView
+
+                android:id="@+id/message_chat_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom"
+                android:layout_below="@id/tv_num"
+                android:divider="@null"
+
+                android:listSelector="@color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:minHeight="@dimen/dimen_50"
+                   android:layout_height="wrap_content"
+                    android:background="@drawable/chat_bottom_shape">
+
+                    <ImageView
+                        android:id="@+id/image_face"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin_left_or_right"
+                        android:src="@drawable/sl_btn_face" />
+
+                    <com.wmx.android.wrstar.chat.view.MyEditText
+                        android:id="@+id/input_sms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/dimen_35"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_9"
+                        android:layout_marginRight="@dimen/dimen_3"
+                        android:layout_toLeftOf="@+id/send_sms"
+                        android:layout_toRightOf="@id/image_face"
+                        android:background="@drawable/bg_edittext"
+                        android:gravity="center_vertical"
+                        android:hint="和大家说点什么"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:singleLine="false"
+                        android:textColorHint="@color/text_disable"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/send_sms"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/input_sms"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:background="@drawable/sl_btn_send"
+                        android:gravity="center"
+                        android:text="发言"
+
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/gray" />
+
+                <include
+                    android:id="@+id/chat_face_container"
+                    layout="@layout/chat_face_container"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly_courseware"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/type"
+            android:visibility="gone">
+
+
+            <GridView
+                android:id="@+id/gv_courseware"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="8dp"
+                android:cacheColorHint="@color/transparent"
+                android:clipToPadding="true"
+                android:horizontalSpacing="@dimen/dimen_10"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/dimen_10">
+
+            </GridView>
+
+
+            <LinearLayout
+                android:id="@+id/ly_no_courseware"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/bg_gray"
+                android:visibility="gone"
+                >
+
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_150"
+                    android:layout_height="@dimen/dimen_150"
+                    android:src="@mipmap/ic_nocourseware"
+                    android:layout_gravity="center_horizontal"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="暂无课件"
+                    android:textColor="@color/text_disable"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/ly_fans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/type"
+            android:visibility="gone">
+
+
+            <GridView
+                android:id="@+id/gv_fans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="8dp"
+                android:cacheColorHint="@color/transparent"
+                android:clipToPadding="true"
+                android:horizontalSpacing="@dimen/dimen_10"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/dimen_10">
+
+            </GridView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_send_gift"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:src="@mipmap/ic_gift"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/dimen_60"
+        android:layout_marginRight="@dimen/dimen_30"
+        />
+
+
+</FrameLayout>

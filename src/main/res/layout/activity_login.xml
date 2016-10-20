@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/bg_login"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/dimen_43"
+              android:paddingRight="@dimen/dimen_43">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_94"
+        android:layout_height="@dimen/dimen_98"
+        android:layout_marginTop="@dimen/dimen_70"
+        android:src="@mipmap/ic_logo"/>
+
+    <EditText
+        android:id="@+id/et_account"
+        style="@style/EditTextAccount"
+        android:layout_height="@dimen/dimen_43"
+        android:layout_marginTop="@dimen/dimen_60"
+        android:background="@drawable/bg_login_item"
+        android:drawableLeft="@mipmap/ic_account_login"
+        android:drawablePadding="@dimen/dimen_13"
+        android:hint="@string/please_input_your_account"
+        android:paddingLeft="@dimen/dimen_17"
+        android:textColorHint="@color/text_white"
+        />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/EditTextPassword"
+        android:layout_height="@dimen/dimen_43"
+        android:layout_marginTop="@dimen/dimen_23"
+        android:background="@drawable/bg_login_item"
+        android:drawableLeft="@mipmap/ic_password_login"
+        android:drawablePadding="@dimen/dimen_13"
+        android:hint="@string/please_input_your_password"
+        android:paddingLeft="@dimen/dimen_17"
+        android:textColorHint="@color/text_white"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30">
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/do_you_forget_password"
+            android:textColor="@color/sl_white_text"
+            android:textSize="@dimen/text_size_2"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/BtnYellow"
+        android:text="@string/login"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_35"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="你也可以使用以下账号登陆"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_2"/>
+
+        <View
+            android:layout_width="@dimen/dimen_43"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_centerVertical="true"
+            android:background="#d0ffffff"></View>
+
+        <View
+            android:layout_width="@dimen/dimen_43"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#d0ffffff"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_37"
+        android:layout_marginRight="@dimen/dimen_37"
+        android:layout_marginTop="@dimen/dimen_23">
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:id="@+id/iv_weibo_login"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@drawable/sl_weibo_login"/>
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:id="@+id/iv_qq_login"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sl_qq_login"/>
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:id="@+id/iv_wechat_login"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sl_wechat_login"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_27"
+        android:text="@string/register_immediately"
+        android:textColor="@color/sl_yellow_text"
+        android:textSize="@dimen/text_size_3"/>
+</LinearLayout>

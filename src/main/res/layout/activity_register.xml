@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+              android:orientation="vertical">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        app:leftPadding="@dimen/dimen_8"
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImage="@mipmap/ic_back_arrow"
+        app:showLeftImage="true"
+        app:title="@string/register"/>
+
+    <RelativeLayout
+        style="@style/RegisterItem"
+        android:layout_marginTop="@dimen/dimen_12"
+        >
+
+        <EditText
+            android:id="@+id/et_account"
+            style="@style/EditTextAccount"
+            android:hint="@string/please_register_account"
+            android:drawableLeft="@mipmap/ic_account_register"
+            android:drawablePadding="@dimen/common_margin_left_or_right"
+            />
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/RegisterItem"
+        >
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditTextPassword"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:hint="@string/please_register_your_password"
+            android:drawableLeft="@mipmap/ic_password_register"
+            android:drawablePadding="@dimen/common_margin_left_or_right"/>
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/RegisterItem">
+
+        <TextView
+            android:id="@+id/tv_get_auth_code"
+            android:layout_width="@dimen/dimen_85"
+            android:layout_height="@dimen/dimen_27"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/get_auth_code"
+            android:textSize="@dimen/text_size_2"
+            android:textColor="@color/sl_get_auth_code"
+            android:background="@drawable/sl_get_auth_code"/>
+
+        <EditText
+            android:id="@+id/et_auth_code"
+            style="@style/EditTextSingleLine"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_100"
+            android:hint="@string/please_input_auth_code"
+            android:inputType="number"
+            android:maxLength="@integer/max_length_auth_code"
+            android:drawableLeft="@mipmap/ic_auth_code"
+            android:drawablePadding="@dimen/common_margin_left_or_right"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/BtnYellow"
+        android:layout_marginLeft="@dimen/dimen_43"
+        android:layout_marginRight="@dimen/dimen_43"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="@string/register"
+        android:enabled="false"/>
+</LinearLayout>

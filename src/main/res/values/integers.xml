@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_length_action_bar_title">10</integer>
+    <integer name="max_length_account">11</integer>
+    <integer name="max_length_password">20</integer>
+    <integer name="min_length_password">6</integer>
+    <integer name="max_length_nickname">10</integer>
+    <integer name="min_length_nickname">2</integer>
+    <integer name="max_length_hometown">30</integer>
+    <integer name="max_length_post_content">5000</integer>
+    <integer name="max_length_comment_content">2000</integer>
+    <integer name="min_length_post_content">10</integer>
+    <integer name="max_length_question">100</integer>
+    <integer name="min_length_question">3</integer>
+    <integer name="max_length_description">5000</integer>
+    <integer name="min_length_description">10</integer>
+    <integer name="max_length_auth_code">4</integer>
+</resources>

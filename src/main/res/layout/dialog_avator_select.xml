@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:id="@+id/ly_camera"
+        android:background="@drawable/sl_white_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52"
+         >
+
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/text_size_6" />
+
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_album"
+        android:background="@drawable/sl_white_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52"
+         >
+
+
+        <TextView
+            android:id="@+id/tv_album"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="本地相册"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/text_size_6" />
+
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/sl_white_gray">
+
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_6" />
+
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+
+</LinearLayout>

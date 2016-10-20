@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wmx.android.wrstar.views.activities.MyRecommend">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+        app:title="我的推荐" />
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:layout_below="@+id/action_bar"
+        android:id="@+id/pager_tabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        app:pstsShouldExpand="true"
+        app:pstsIndicatorColor="@color/text_yellow"
+        app:pstsIndicatorHeight="5dp"
+        app:pstsDividerColor="@color/white"
+        android:fillViewport="false" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/pager_tabstrip"
+        android:id="@+id/viewpager_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

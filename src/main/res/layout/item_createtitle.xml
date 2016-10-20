@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/ed_createtitle"
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:hint="请输入直播标题"
+        android:textSize="@dimen/dimen_17"
+        android:textColor="@color/sl_white_text"
+        android:background="@null"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:background="@drawable/bg_btn_gray"
+        android:id="@+id/tv_go"
+        android:textSize="@dimen/dimen_20"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:gravity="center"
+        />
+
+</LinearLayout>

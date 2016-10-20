@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/setting"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+
+        />
+
+    <View
+       style="@style/Divier20"/>
+
+
+    <RelativeLayout
+
+        style="@style/RegisterItem">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_gray_deep"
+            android:text="消息提醒"
+
+            />
+
+
+        <CheckBox
+            android:id="@+id/rb_showmessage"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_25"
+            android:button="@null"
+            android:background="@drawable/bg_radio_switch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_clean_cache"
+        style="@style/RegisterItem">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_gray_deep"
+            android:text="清除缓存"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0B"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            android:textColor="@color/text_disable"
+
+            />
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/ly_update"
+        style="@style/RegisterItem">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_gray_deep"
+            android:text="检查更新"
+            />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="V1.0"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            android:textColor="@color/text_disable"/>
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+    <View
+        style="@style/Divier20"/>
+    <RelativeLayout
+            android:id="@+id/ly_change_password"
+        style="@style/RegisterItem">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_gray_deep"
+            android:text="修改密码"
+
+            />
+
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+    <View
+        style="@style/Divier20"/>
+    <RelativeLayout
+        android:id="@+id/ly_exit_account"
+        style="@style/RegisterItem">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_yellow"
+            android:text="退出登录"
+
+            />
+
+
+        <View
+            style="@style/HorizontalDivider"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+</LinearLayout>

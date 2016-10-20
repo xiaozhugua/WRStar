@@ -1,0 +1,204 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+
+<View
+    android:id="@+id/ly_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_live_default"
+    />
+    <RelativeLayout
+        android:id="@+id/ly_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.wmx.android.wrstar.views.activities.LiveSurfaceView
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/otherview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:id="@+id/controlsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ly_fans"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageButton
+                android:id="@+id/NetworkInfoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:src="@mipmap/net_info" />
+
+            <ImageButton
+                android:id="@+id/switchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:src="@mipmap/ic_switch" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_fans"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/ly_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <GridView
+
+                android:id="@+id/gv_fans"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:numColumns="8"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_3"
+                android:cacheColorHint="@color/transparent"
+                android:clipToPadding="true"
+                android:horizontalSpacing="@dimen/dimen_3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/dimen_3">
+
+            </GridView>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_text"
+                android:id="@+id/tv_num"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text=""
+                android:clickable="true"
+                android:textSize="@dimen/dimen_10"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="20dp"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:id="@+id/ly_top"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="50dp">
+
+
+
+            <com.wmx.android.wrstar.views.widgets.CirImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/img_avatar"
+                android:layout_width="@dimen/dimen_74"
+                android:layout_height="@dimen/dimen_74"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_avatar_default" />
+
+            <TextView
+                android:id="@+id/tv_Live_name"
+                android:text="拉馬凱"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/img_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_Live2_location"
+                android:text="深圳"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_4"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_Live_name"
+                android:layout_toRightOf="@+id/img_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:id="@+id/image_close"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/img_closei"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/ly_chat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            >
+
+            <com.wmx.android.wrstar.chat.view.DropdownListView
+                android:id="@+id/message_chat_listview"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000"
+                android:dividerHeight="1dp"
+                android:background="@android:color/transparent"
+                android:listSelector="@color/transparent" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/filter"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/StartStopAVBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:src="@mipmap/pause" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="意见反馈"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+        />
+
+
+    <EditText
+        android:id="@+id/et_fedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        android:gravity="top"
+        android:layout_marginTop="@dimen/common_margin_top_or_bottom"
+        android:layout_marginLeft="@dimen/common_margin_left_or_right"
+        android:layout_marginRight="@dimen/common_margin_left_or_right"
+        android:background="@drawable/bg_btn_white"
+        android:padding="@dimen/dimen_10"
+        android:hint="您留下的每个字都将帮助改善我们的产品，期待您的反馈!"/>
+
+<Button
+    android:id="@+id/btn_ensure"
+    style="@style/BtnYellow"
+    android:layout_marginLeft="@dimen/dimen_90"
+    android:layout_marginRight="@dimen/dimen_90"
+    android:layout_marginTop="@dimen/common_margin_top_or_bottom"
+    android:text="提交"
+    />
+
+</LinearLayout>

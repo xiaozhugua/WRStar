@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftPadding="@dimen/dimen_8"
+        app:showLeftImage="true"
+        app:title="@string/buyingvip" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="@dimen/dimen_150"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:src="@mipmap/ic_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+         >
+
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_20"
+            android:textColor="@color/text_gray_deep"
+           android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="微明星 VIP"
+
+            />
+        <ImageView
+            android:layout_width="@dimen/dimen_25"
+            android:layout_height="@dimen/dimen_25"
+            android:src="@mipmap/ic_bigv"
+            android:layout_toLeftOf="@id/tv1"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vip_price"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/text_gray_deep"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数量:1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/text_gray_deep"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vip_price_total"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/text_gray_deep"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_80"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/btn_pay_wechat"
+            android:background="@drawable/sl_btn_yellow"
+            android:layout_width="@dimen/dimen_110"
+            android:layout_height="@dimen/dimen_40"
+            android:text="微信支付"
+            android:layout_marginLeft="@dimen/dimen_50"
+            />
+
+
+        <Button
+            android:id="@+id/btn_pay_ali"
+            android:background="@drawable/sl_btn_white"
+            android:layout_width="@dimen/dimen_110"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginLeft="@dimen/dimen_50"
+            android:text="支付宝支付"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

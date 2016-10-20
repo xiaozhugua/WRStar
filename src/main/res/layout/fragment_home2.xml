@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.wmx.android.wrstar.views.widgets.ActionBarPrimary
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView_home2"
+        android:scrollbars="none"
+        android:layout_below="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.wmx.android.wrstar.views.widgets.RollPager.RollPagerView
+        android:id="@+id/roll_pagerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_170" />
+
+    <RelativeLayout
+        android:id="@+id/ly_interested"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+
+        >
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:id="@+id/tv_wmx_zhuanglan_number"
+            android:layout_toRightOf="@+id/color3"
+            android:text="微明星专栏(3)"
+            android:textColor="@color/sl_btn_text"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_zhuanlan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"></LinearLayout>
+    </HorizontalScrollView>
+
+
+    <View style="@style/Divier15" />
+
+    <RelativeLayout
+        android:id="@+id/ly_wrstart_today_recomm"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+
+        >
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_toRightOf="@+id/color3"
+            android:text="今日推荐"
+            android:textColor="@color/sl_btn_text"
+            android:textSize="16sp"
+            android:id="@+id/tv_wmx_recommend" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ll_wmx_todayrecommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        layout="@layout/item_wrstart_recommend"></include>
+
+    <View style="@style/Divier15" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+
+            android:id="@+id/tv_wrstart_zuixinshang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_toRightOf="@+id/color3"
+            android:text="最新上"
+            android:textColor="@color/sl_btn_text"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_wrstart_zuixin_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:text="查看全部11个"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:textColor="@color/bg_gray_deep"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_wrstart_zuixinshang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"></LinearLayout>
+    </HorizontalScrollView>
+
+    <View style="@style/Divier15" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_toRightOf="@+id/color3"
+            android:text="最热门"
+            android:textColor="@color/sl_btn_text"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_wrstart_hot_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:text="查看全部11个"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:textColor="@color/bg_gray_deep"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_wrstart_hot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"></LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/net_error"
+        layout="@layout/item_net_error" />
+</RelativeLayout>

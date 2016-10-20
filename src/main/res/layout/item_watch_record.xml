@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="@dimen/dimen_112"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+
+            android:gravity="center"
+            android:maxLines="5"
+            android:text="2016-05-31"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_5" />
+
+        <View
+            android:id="@+id/line_down2"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+
+            android:layout_toRightOf="@id/tv_date"
+            android:background="@color/text_disable" />
+
+        <ImageView
+            android:id="@+id/bigpoint"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_105"
+
+
+            android:background="@mipmap/ic_point_yellow" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_below="@+id/seperate_line2222">
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="@dimen/dimen_112"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:paddingRight="@dimen/dimen_20"
+            android:text="14:02"
+
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_5" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/tv_time"
+            android:background="@color/text_disable" />
+
+        <ImageView
+            android:id="@+id/smallpoint"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_107"
+            android:layout_marginRight="6dp"
+            android:background="@mipmap/ic_point_gray" />
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_toRightOf="@id/tv_time"
+            android:scaleType="fitXY"
+            android:src="@mipmap/image_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_picture"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            android:layout_toRightOf="@id/iv_picture"
+            android:lines="2"
+            android:text="电商数据分析" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/dimen_7"
+            android:background="@drawable/shape_rectangle_bj_orange"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_2"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_2"
+            android:text="点播"
+            android:textSize="@dimen/text_size_3" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

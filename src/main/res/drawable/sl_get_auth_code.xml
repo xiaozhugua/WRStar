@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/bg_get_auth_code_p" android:state_pressed="true"> </item>
+    <item android:drawable="@drawable/bg_get_auth_code_d" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/bg_get_auth_code"> </item>
+</selector>

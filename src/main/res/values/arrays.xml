@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bottom_titles">
+        <item>首页</item>
+        <item>直播会堂</item>
+        <item>创建直播</item>
+        <item>精彩视频</item>
+        <item>我的</item>
+    </array>
+</resources>

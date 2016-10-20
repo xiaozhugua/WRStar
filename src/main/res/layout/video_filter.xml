@@ -1,0 +1,99 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/controlsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="0dp">
+        
+            
+        <ImageButton
+            android:id="@+id/NetworkInfoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="#000000"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:src="@mipmap/net_info" />
+            
+        <ImageButton
+            android:id="@+id/switchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="#000000"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:src="@mipmap/ic_switch" />
+ 
+    </LinearLayout>
+            
+        
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/controlsLayout"
+        android:background="#000000" >
+
+        <com.netease.livestreamingFilter.view.CameraSurfaceView
+            android:id="@+id/gl_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/StartStopAVBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="#000000"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:src="@mipmap/play" />
+
+        <Button
+            android:id="@+id/MixAudioBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="伴音选择"
+            android:gravity="center" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100" />
+
+        <Button
+            android:id="@+id/button_choose_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dip"
+            android:text="滤镜选择" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tool="http://schemas.android.com/tools"
+              android:background="@mipmap/bg_buttom_qiehuan"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_60"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_alignParentLeft="true"
+        android:id="@+id/re_first"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:textSize="@dimen/text_size_1"
+            tool:text="首页"
+            tool:textColor="@color/text_white_50"/>
+
+        <ImageView
+            android:id="@+id/img_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_first"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_1"
+            tool:src="@mipmap/ic_bottom_bar_first"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/re_first"
+        android:id="@+id/re_living"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_living"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:textSize="@dimen/text_size_1"
+            tool:text="直播会堂"
+            tool:textColor="@color/text_white_50"/>
+
+        <ImageView
+            android:id="@+id/img_living"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_living"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_1"
+            tool:src="@mipmap/ic_bottom_bar_living"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_toRightOf="@+id/re_first"
+        android:id="@+id/live_zhibo"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:textSize="@dimen/text_size_1"
+            tool:text="直播会堂"
+            tool:textColor="@color/text_white_50"/>
+
+        <ImageView
+            android:onClick="show"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_1"
+            tool:src="@mipmap/live_zhibo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/re_my"
+        android:id="@+id/re_video"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:textSize="@dimen/text_size_1"
+            tool:text="精彩视频"
+            tool:textColor="@color/text_white_50"/>
+
+        <ImageView
+            android:id="@+id/img_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_1"
+            tool:src="@mipmap/ic_bottom_bar_video"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/re_my"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:textSize="@dimen/text_size_1"
+            tool:text="我的"
+            tool:textColor="@color/text_yellow"/>
+
+        <ImageView
+            android:id="@+id/img_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_my"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_1"
+            tool:src="@mipmap/ic_bottom_bar_my_sl"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:id="@+id/re_create_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/img_create_live"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            tool:background="@mipmap/live_zhibo"/>
+    </LinearLayout>-->

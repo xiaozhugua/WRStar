@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="150dp"
+    android:layout_height="160dp">
+
+
+
+        <ImageView
+            android:id="@+id/img_spisodetwo_prepic"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:src="@drawable/img_touxiang"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="田园牧歌的"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:paddingLeft="@dimen/dimen_2"
+            android:paddingRight="@dimen/dimen_2"
+            android:textColor="@color/text_gray"
+            android:gravity="center"
+            />
+
+
+
+
+
+</LinearLayout>

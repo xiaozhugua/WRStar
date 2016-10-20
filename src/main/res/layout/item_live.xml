@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@drawable/bg_btn_yellow"
+            android:text="立即预约"
+            android:textColor="@color/text_gray_deep"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            android:textSize="@dimen/text_size_4"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_state"
+            android:layout_width="@dimen/dimen_85"
+            android:layout_height="@dimen/dimen_33"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            android:layout_marginTop="@dimen/dimen_15"
+
+            android:background="@drawable/bg_btn_yellow"
+            android:text="直播中"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_4" />
+h
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180"
+            android:layout_below="@id/iv_avator"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_book_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_picture"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="1399位客官已约"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_2" />
+
+        <View
+            android:id="@+id/view_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180"
+            android:layout_alignTop="@id/iv_picture"
+            android:background="#73161616"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignTop="@id/iv_picture"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:src="@mipmap/ic_vip"
+
+            />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_alignBottom="@id/iv_type"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_toRightOf="@id/iv_type"
+            android:background="@mipmap/ic_live_tag"
+            android:gravity="center"
+            android:paddingRight="@dimen/dimen_5"
+            android:text="直播中"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_1" />
+
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:id="@+id/iv_avator"
+
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginLeft="@dimen/common_margin_left_or_right"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:padding="@dimen/dimen_6"
+            android:src="@mipmap/ic_avatar_default" />
+
+        <TextView
+            android:id="@+id/tv_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_avator"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_toRightOf="@id/iv_avator"
+            android:text="王利杰"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_3"
+
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/cen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/dimen_100"
+
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_toRightOf="@id/ratingbar">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_3"
+
+                android:layout_marginLeft="@dimen/dimen_2"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/dimen_4"
+
+                android:paddingRight="@dimen/dimen_4"
+                android:paddingTop="@dimen/dimen_4"
+                android:text="O2O"
+
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_0" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/tv1"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/dimen_4"
+                android:paddingLeft="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_2"
+                android:paddingTop="@dimen/dimen_4"
+                android:text="颜值"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_0" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_1"
+                android:layout_toRightOf="@+id/tv2"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/dimen_4"
+                android:paddingLeft="@dimen/dimen_4"
+                android:paddingRight="@dimen/dimen_4"
+                android:paddingTop="@dimen/dimen_4"
+                android:text="成功"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_size_0" />
+
+
+        </RelativeLayout>
+
+
+        <com.wmx.android.wrstar.views.widgets.RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@id/tv_author_name"
+            android:layout_below="@id/tv_author_name"
+
+
+            android:layout_toRightOf="@id/tv_author_name"
+            ratingbar:starCount="5"
+            ratingbar:starEmpty="@mipmap/ic_rating_star2"
+            ratingbar:starFill="@mipmap/ic_rating_star"
+            ratingbar:starHalf="@mipmap/ic_rating_star2"
+            ratingbar:starImageSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_picture"
+            android:layout_marginLeft="@dimen/common_margin_left_or_right"
+            android:layout_marginRight="@dimen/common_margin_left_or_right"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:text="成功创业的九个因素"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_4" />
+
+
+        <TextView
+            android:id="@+id/tv_opentiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/common_margin_left_or_right"
+            android:layout_marginTop="@dimen/dimen_7"
+            android:text="开讲时间:2015年11月30日 19:30"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_2" />
+
+    </RelativeLayout>
+
+    <View style="@style/Divier10" />
+</LinearLayout>

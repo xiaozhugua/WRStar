@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linner_vediodetials_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/bg_gray"
+        >
+
+        <RelativeLayout
+            android:background="@drawable/bg_edit_cusor"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/edit_vediodetials_recommend"
+                android:gravity="center_vertical"
+                android:text="写评论..."
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/bg_gray_deep"
+                android:textSize="@dimen/dimen_12"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ly_vediodetials_recommend_num"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_marginLeft="10dip"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_vediodetials_recommend_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_pinlun_num"
+                />
+            <TextView
+                android:background="@drawable/bg_red_yuandian"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/img_vediodetials_recommend_num"
+                android:layout_marginLeft="-20dp"
+                android:id="@+id/tv_vediodetials_recommend_num"
+                android:text="2"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:textSize="@dimen/dimen_6"
+                android:textColor="@color/white"
+                android:layout_width="40dp"
+                android:layout_height="10dp" />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/img_vediodetials_recommend_collected"
+            android:src="@mipmap/img_collect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/img_vediodetials_recommend_share"
+            android:src="@mipmap/img_share"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

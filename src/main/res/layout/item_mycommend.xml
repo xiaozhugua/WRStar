@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/dimen_20"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="10dp"
+        android:text="4"
+        android:id="@+id/tv_recom_mignci2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/rree"
+        android:layout_toRightOf="@+id/tv_recom_mignci2"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/re_avatar2"
+            android:src="@drawable/iv_head_to"
+            />
+        <TextView
+            android:id="@+id/tv_vip2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_bigv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/rree"
+    android:layout_marginLeft="5dp">
+
+    <TextView
+        android:textSize="@dimen/dimen_12"
+        android:text="拉玛卡"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:id="@+id/tv_recom_mignname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tv_recom_mignname2"
+        android:textSize="@dimen/dimen_10"
+        android:text="26"
+        android:textColor="@color/red"
+        android:id="@+id/tv_recom_migpaiming2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@+id/tv_recom_migpaiming2"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tv_recom_mignname2"
+        android:textSize="@dimen/dimen_10"
+        android:text="人次"
+        android:id="@+id/tv_recom_migreci2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+    <View
+        style="@style/HorizontalDivider"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

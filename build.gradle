@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.wmx.android.wrstar"
+        minSdkVersion 15
+        targetSdkVersion 22
+
+        versionCode 34
+        versionName "2.1"
+
+
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+
+        multiDexEnabled true
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+//    lintOptions {
+//        checkReleaseBuilds false
+//        abortOnError false
+//    }
+
+    signingConfigs {
+        release {
+            storeFile file("../wrstar-appkey.jks")
+            storePassword "wrstar_xx+9900245"
+            keyAlias "wrstar"
+            keyPassword "wrstar_xx+9900245"
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false  //true  开启混淆
+            zipAlignEnabled false
+            shrinkResources true  //true 去掉未使用的资源文件
+            signingConfig signingConfigs.release
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            signingConfig signingConfigs.release
+            minifyEnabled false  //true  开启混淆
+            zipAlignEnabled true
+            shrinkResources true  //true 去掉未使用的资源文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    def fileName = "WRStar_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+    }
+
+    productFlavors {
+        "360" {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]
+        }
+        dev {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "dev"]
+        }
+        m360 {
+            minSdkVersion 23
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/NELivePlayer.jar')
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.jude:easyrecyclerview:4.0.2'
+    compile('io.socket:socket.io-client:0.7.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    compile 'com.pgyersdk:sdk:2.2.2'
+    compile files('libs/alipaySdk-20151112.jar')
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile files('libs/Livestreaming.jar')
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+}

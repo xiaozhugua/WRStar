@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+            >
+
+
+
+
+    <com.wmx.android.wrstar.views.widgets.FragementViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/vp"
+        />
+
+
+   <com.wmx.android.wrstar.views.widgets.BottomBar
+       android:id="@+id/bottom_bar"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.5"
+       >
+
+   </com.wmx.android.wrstar.views.widgets.BottomBar>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:background="@mipmap/live_zhibo"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="43dp" />
+    </RelativeLayout>
+</LinearLayout>

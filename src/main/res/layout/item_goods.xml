@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_about_logo"
+        >
+
+    </ImageView>
+
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="70dp"
+
+            >
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tv_goodTitleName"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="意大利进口东方宝石300ml"
+                />
+
+            <TextView
+                android:id="@+id/tv_goodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥72.00"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_5"
+                />
+
+            <TextView
+                android:id="@+id/tv_addgood"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:background="@mipmap/img_addgood"
+                />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+    <View style="@style/Divier10" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_120"
+        android:background="@drawable/bg_circle_white"
+        android:padding="@dimen/dimen_12"
+        android:src="@mipmap/img_goods" />
+
+    <TextView
+        android:id="@+id/text_goodsNum"
+        android:text="4"
+        android:background="@drawable/bg_red_yuandian"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/dimen_120"
+        android:gravity="center"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_close"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/bg_btn_white"
+        android:paddingTop="@dimen/dimen_10">
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/rv_goodsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_progress="@layout/view_progress" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

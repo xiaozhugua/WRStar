@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dimen_35"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_120"
+        android:background="@drawable/bg_circle_white"
+        android:padding="@dimen/dimen_12"
+        android:src="@mipmap/ic_close" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_250"
+        android:layout_below="@id/iv_close"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_30"
+        android:background="@drawable/bg_btn_white"
+        android:paddingTop="@dimen/dimen_10">
+
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:src="@mipmap/ic_gift_flower" />
+
+
+        <TextView
+            android:id="@+id/tv_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_toRightOf="@id/iv_gift"
+            android:text="鲜花送礼"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_size_6" />
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_gift_name"
+            android:layout_below="@id/tv_gift_name"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="送"
+            android:textColor="@color/text_gray_deep" />
+
+        <EditText
+            android:id="@+id/et_star"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_25"
+            android:layout_alignLeft="@id/tv_gift_name"
+            android:layout_below="@id/tv_gift_name"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_22"
+            android:maxLength="7"
+            android:inputType="number"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@drawable/bg_edittext_grey"
+            android:hint="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_1"
+            android:paddingRight="@dimen/dimen_1"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_disable"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_classifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/tv_gift_name"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_toRightOf="@id/et_star"
+            android:text="束给TA"
+            android:textColor="@color/text_gray_deep" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_gift_name"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="@string/total_moeny"
+            android:textColor="@color/text_gray_deep" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@id/iv_gift"
+            android:id="@+id/ly3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd_star"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:background="@drawable/bg_btn_radio"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/dimen_10"
+                android:button="@null"
+                android:checked="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray_deep"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textSize="@dimen/text_size_6"
+                android:text="星豆支付"
+                />
+
+            <TextView
+                android:id="@+id/tv_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray_deep"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="@string/total_star"
+                />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_below="@id/ly3"
+
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:id="@+id/tv_go_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+
+                android:layout_marginLeft="@dimen/dimen_10"
+                 android:layout_centerHorizontal="true"
+                android:text="去充值"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_tip"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:background="@drawable/bg_btn_yellow"
+            android:text="确认支付" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

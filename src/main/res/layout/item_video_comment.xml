@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left_or_right"
+        android:layout_marginRight="@dimen/common_margin_left_or_right"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="10dp"
+         >
+
+
+
+
+        <com.wmx.android.wrstar.views.widgets.CirImageView
+            android:id="@+id/cmt_avator"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:src="@mipmap/ic_avatar_default"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_user_name_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="花祭"
+            android:layout_toRightOf="@+id/cmt_avator"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:layout_marginLeft="@dimen/dimen_5"
+
+            />
+
+        <TextView
+            android:id="@+id/cmt_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论区域"
+            android:layout_alignLeft="@+id/tv_user_name_comm"
+            android:layout_below="@+id/tv_user_time_comm"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:textSize="@dimen/dimen_12"
+            />
+
+        <TextView
+            android:layout_below="@+id/tv_user_name_comm"
+            android:id="@+id/tv_user_time_comm"
+            android:layout_toRightOf="@+id/cmt_avator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30分钟前"
+            android:textSize="@dimen/dimen_8"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:lines="1"
+            />
+<TextView
+    android:id="@+id/cmt_num"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="@dimen/dimen_4"
+    android:text="1560"
+    />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="@dimen/dimen_15"
+            android:layout_height="@dimen/dimen_15"
+            android:src="@mipmap/img_pinlun_num"
+            android:layout_toLeftOf="@+id/cmt_num"
+            android:layout_alignBottom="@+id/cmt_num"
+            android:layout_marginRight="@dimen/dimen_5"
+            />
+
+        <TextView
+            android:id="@+id/cmt_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv1"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_alignBottom="@+id/cmt_num"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:text="1560"
+            />
+        <ImageView
+            android:id="@+id/iv_good"
+            android:layout_width="@dimen/dimen_15"
+            android:layout_height="@dimen/dimen_15"
+            android:src="@mipmap/img_zan"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_toLeftOf="@+id/cmt_good"
+            android:layout_alignBottom="@+id/cmt_num"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
